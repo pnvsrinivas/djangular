@@ -17,8 +17,8 @@ class AuthViewSet(views.APIView):
     permission_classes = [AllowAny, ]
 
     def post(self, request, format=None):
-        username = request.POST.get('username')
-        password = request.POST.get('password')
+        username = request.data.get('username')
+        password = request.data.get('password')
         logger.info("Logging...")
         is_valid, message = authenticate(username, password)
         if is_valid:
