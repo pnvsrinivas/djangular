@@ -29,3 +29,13 @@ npm install
 ng serve
 
 This server will be running on http://127.0.0.1:4205
+
+## Versions
+
+Python 3.7
+
+Angular 11
+
+nodejs v12.18.4
+
+npm 6.14.6
